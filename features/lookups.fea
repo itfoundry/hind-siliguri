@@ -1,0 +1,706 @@
+# -------------------
+# BASIC SHAPING FORMS
+# -------------------
+
+# Nukta Forms
+# -----------
+
+lookup nukt {
+  sub bnDDA  bnNukta by bnDDxA;
+  sub bnDDHA bnNukta by bnDDHxA;
+  sub bnYA   bnNukta by bnYxA;
+} nukt;
+
+
+# Akhand Ligatures
+# ----------------
+
+lookup akhn {
+  sub bnKA bnVirama bnSSA by bnK_SSA;
+  sub bnJA bnVirama bnNYA by bnJ_NYA;
+} akhn;
+
+lookup akhn_takhanda {
+  sub bnTA' bnVirama' zerowidthjoiner by bnTAkhanda;
+} akhn_takhanda;
+
+
+# Reph Forms
+# ----------
+
+lookup rphf {
+  sub bnRA bnVirama by bnReph;
+  sub asRA bnVirama by bnReph; # Assamese
+} rphf;
+
+
+# Below-base Forms
+# ----------------
+
+lookup blwf_new {
+  sub bnVirama bnBA by bnBAc2;
+  sub bnVirama bnRA by bnRAc2;
+  sub bnVirama asRA by bnRAc2; # Assamese
+} blwf_new;
+
+lookup blwf_old {
+  sub bnBA bnVirama by bnBAc2;
+  sub bnRA bnVirama by bnRAc2;
+  sub asRA bnVirama by bnRAc2; # Assamese
+} blwf_old;
+
+
+# Half Forms
+# ----------
+
+lookup half {
+
+  # Basic
+
+  sub bnKA   bnVirama by bnK;
+  sub bnKHA  bnVirama by bnKH;
+  sub bnGA   bnVirama by bnG;
+  sub bnGHA  bnVirama by bnGH;
+  sub bnNGA  bnVirama by bnNG;
+  sub bnCA   bnVirama by bnC;
+  sub bnCHA  bnVirama by bnCH;
+  sub bnJA   bnVirama by bnJ;
+  sub bnJHA  bnVirama by bnJH;
+  sub bnNYA  bnVirama by bnNY;
+  sub bnTTA  bnVirama by bnTT;
+  sub bnTTHA bnVirama by bnTTH;
+  sub bnDDA  bnVirama by bnDD;
+  sub bnDDHA bnVirama by bnDDH;
+  sub bnNNA  bnVirama by bnNN;
+  sub bnTA   bnVirama by bnT; # Fake: TA_Virama
+  sub bnTHA  bnVirama by bnTH;
+  sub bnDA   bnVirama by bnD;
+  sub bnDHA  bnVirama by bnDH;
+  sub bnNA   bnVirama by bnN;
+  sub bnPA   bnVirama by bnP;
+  sub bnPHA  bnVirama by bnPH;
+  sub bnBA   bnVirama by bnB;
+  sub bnBHA  bnVirama by bnBH;
+  sub bnMA   bnVirama by bnM;
+  sub bnYA   bnVirama by bnY;
+  sub bnRA   bnVirama by bnR;
+  sub bnLA   bnVirama by bnL;
+  sub bnSHA  bnVirama by bnSH;
+  sub bnSSA  bnVirama by bnSS;
+  sub bnSA   bnVirama by bnS;
+  sub bnHA   bnVirama by bnH;
+
+  # Assamese
+
+  sub asRA bnVirama by asR;
+  sub asWA bnVirama by asW;
+
+  # Nukta
+
+  sub bnDDxA  bnVirama by bnDDx;
+  sub bnDDHxA bnVirama by bnDDHx;
+  sub bnYxA   bnVirama by bnYx;
+
+  # Akhand
+
+  sub bnK_SSA bnVirama by bnK_SS; # Fake: bnK_SSA_Virama
+  sub bnJ_NYA bnVirama by bnJ_NY; # Fake: bnJ_NYA_Virama
+
+} half;
+
+
+# Post-base Forms
+# ---------------
+
+lookup pstf_new {
+  sub bnVirama bnYA by bnYAc2;
+} pstf_new;
+
+lookup pstf_old {
+  sub bnYA bnVirama by bnYAc2;
+} pstf_old;
+
+
+# ----------------------------
+# MANDATORY PRESENTATION FORMS
+# ----------------------------
+
+# Initial Forms
+# -------------
+
+lookup init {
+  sub bnmE  by bnmE.init;
+  sub bnmAI by bnmAI.init;
+} init;
+
+
+# Pre-base Substitution
+# ---------------------
+
+# C Reph'> mII Candrabindu -> C mI Reph.matraii' Candrabindu
+
+# C Reph YAc2 mAA <<Candrabindu' -> C Reph Candrabindu' YAc2 mAA
+
+# C Reph <AUlenghthmark' Candrabindu -> C AUlenghthmark' Reph Candrabindu
+# Core Text: C Reph Candrabindu <<AUlenghthmark' -> C AUlenghthmark' Reph Candrabindu
+
+#! mU -> mU.ra
+
+# C mU.ra'>> Reph Candrabindu -> C Reph Candrabindu mU.ra'
+
+#! Reph Candrabindu -> Reph_Candrabindu
+
+# - - -
+
+# Reorder A
+
+lookup pres_reorder_A1 {
+  sub
+    bnReph' lookup swap_Reph_mII
+    bnmII'  lookup swap_Reph_mII;
+  sub
+    bnmAA'         lookup swap_mAA_Candrabindu
+    bnCandrabindu' lookup swap_mAA_Candrabindu;
+  sub
+    bnCandrabindu'  lookup swap_Candrabindu_AUlengthmark
+    bnAUlengthmark' lookup swap_Candrabindu_AUlengthmark;
+} pres_reorder_A1;
+
+lookup pres_reorder_A2 {
+  sub
+    bnYAc2'    lookup swap_YAc2_Candrabindu
+    bnCandrabindu' lookup swap_YAc2_Candrabindu;
+  sub
+    bnReph'         lookup swap_Reph_AUlengthmark
+    bnAUlengthmark' lookup swap_Reph_AUlengthmark;
+} pres_reorder_A2;
+
+# BA C2
+
+lookup pres_ba_c2 {
+
+  sub bnKA  bnBAc2 by bnK_BA;
+  sub bnKHA bnBAc2 by bnKH_BA;
+  sub bnGA  bnBAc2 by bnG_BA;
+  # sub bnGHA bnBAc2 by bnGH_BA;
+  # sub bnNGA bnBAc2 by bnNG_BA;
+  sub bnCA  bnBAc2 by bnC_BA;
+  sub bnCHA bnBAc2 by bnCH_BA;
+  sub bnJA  bnBAc2 by bnJ_BA;
+  # sub bnJHA bnBAc2 by bnJH_BA;
+  # sub bnNYA bnBAc2 by bnNY_BA;
+  sub bnTTA bnBAc2 by bnTT_BA;
+  # sub bnTTHA bnBAc2 by bnTTH_BA;
+  sub bnDDA bnBAc2 by bnDD_BA;
+  # sub bnDDHA bnBAc2 by bnDDH_BA;
+  sub bnNNA bnBAc2 by bnNN_BA;
+  sub bnTA  bnBAc2 by bnT_BA;
+  sub bnTHA bnBAc2 by bnTH_BA;
+  sub bnDA  bnBAc2 by bnD_BA;
+  sub bnDHA bnBAc2 by bnDH_BA;
+  sub bnNA  bnBAc2 by bnN_BA;
+  sub bnPA  bnBAc2 by bnP_BA;
+  # sub bnPHA bnBAc2 by bnPH_BA;
+  sub bnBA  bnBAc2 by bnB_BA;
+  # sub bnBHA bnBAc2 by bnBH_BA;
+  sub bnMA  bnBAc2 by bnM_BA;
+  # sub bnYA  bnBAc2 by bnY_BA;
+  # sub bnRA  bnBAc2 by bnR_BA; # Reph
+  sub bnLA  bnBAc2 by bnL_BA;
+  sub bnSHA bnBAc2 by bnSH_BA;
+  sub bnSSA bnBAc2 by bnSS_BA;
+  sub bnSA  bnBAc2 by bnS_BA;
+  sub bnHA  bnBAc2 by bnH_BA;
+
+  sub bnK_SSA bnBAc2 by bnK_SS_BA;
+  # sub bnJ_NYA bnBAc2 by bnJ_NY_BA;
+
+} pres_ba_c2;
+
+# RA C2
+
+lookup pres_ra_c2 {
+
+  sub bnKA   bnRAc2 by bnK_RA;
+  sub bnKHA  bnRAc2 by bnKH_RA;
+  sub bnGA   bnRAc2 by bnG_RA;
+  sub bnGHA  bnRAc2 by bnGH_RA;
+  sub bnNGA  bnRAc2 by bnNG_RA;
+  sub bnCA   bnRAc2 by bnC_RA;
+  sub bnCHA  bnRAc2 by bnCH_RA;
+  sub bnJA   bnRAc2 by bnJ_RA;
+  sub bnJHA  bnRAc2 by bnJH_RA;
+  sub bnNYA  bnRAc2 by bnNY_RA;
+  sub bnTTA  bnRAc2 by bnTT_RA;
+  sub bnTTHA bnRAc2 by bnTTH_RA;
+  sub bnDDA  bnRAc2 by bnDD_RA;
+  sub bnDDHA bnRAc2 by bnDDH_RA;
+  sub bnNNA  bnRAc2 by bnNN_RA;
+  sub bnTA   bnRAc2 by bnT_RA;
+  sub bnTHA  bnRAc2 by bnTH_RA;
+  sub bnDA   bnRAc2 by bnD_RA;
+  sub bnDHA  bnRAc2 by bnDH_RA;
+  sub bnNA   bnRAc2 by bnN_RA;
+  sub bnPA   bnRAc2 by bnP_RA;
+  sub bnPHA  bnRAc2 by bnPH_RA;
+  sub bnBA   bnRAc2 by bnB_RA;
+  sub bnBHA  bnRAc2 by bnBH_RA;
+  sub bnMA   bnRAc2 by bnM_RA;
+  sub bnYA   bnRAc2 by bnY_RA;
+  # sub bnRA   bnRAc2 by bnR_RA; # Reph
+  sub bnLA   bnRAc2 by bnL_RA;
+  sub bnSHA  bnRAc2 by bnSH_RA;
+  sub bnSSA  bnRAc2 by bnSS_RA;
+  sub bnSA   bnRAc2 by bnS_RA;
+  sub bnHA   bnRAc2 by bnH_RA;
+
+  sub bnK_SSA bnRAc2 by bnK_SS_RA;
+  sub bnJ_NYA bnRAc2 by bnJ_NY_RA;
+
+  sub bnM_BA   bnRAc2 by bnM_B_RA;
+  sub bnM bnBA bnRAc2 by bnM_B_RA; # For Core Text's bug
+
+} pres_ra_c2;
+
+# Small Candrabindu
+
+lookup pres_Candrabindu_smaller_A {
+  sub
+    [
+      bnmII bnAUlengthmark
+      bnI bnII bnU bnUU bnvR bnvRR bnAI bnAU
+      bnTTA bnTT_RA bnTT_BA bnTTHA bnTTH_RA
+    ]
+    bnCandrabindu'
+    by
+    bnCandrabindu.smaller;
+} pres_Candrabindu_smaller_A;
+
+# Conjuncts
+
+lookup pres_conjunct {
+
+  sub bnK  bnKA by bnK_KA;
+  sub bnNG bnKA by bnNG_KA;
+  sub bnL  bnKA by bnL_KA;
+  sub bnSS bnKA by bnSS_KA;
+  sub bnS  bnKA by bnS_KA;
+
+  sub bnNG bnKHA by bnNG_KHA;
+  sub bnS  bnKHA by bnS_KHA;
+
+  sub bnG   bnGA by bnG_GA;
+  sub bnNG  bnGA by bnNG_GA;
+  sub bnDD  bnGA by bnDD_GA;
+  sub bnD   bnGA by bnD_GA;
+  sub bnDDx bnGA by bnDDx_GA;
+  sub bnL   bnGA by bnL_GA;
+
+  sub bnNG bnGHA by bnNG_GHA;
+  sub bnD  bnGHA by bnD_GHA;
+  sub bnL  bnGHA by bnL_GHA;
+
+  sub bnC  bnCA by bnC_CA;
+  sub bnNY bnCA by bnNY_CA;
+  sub bnSH bnCA by bnSH_CA;
+
+  sub bnC  bnCHA by bnC_CHA;
+  sub bnNY bnCHA by bnNY_CHA;
+  sub bnSH bnCHA by bnSH_CHA;
+
+  sub bnNY bnJA by bnNY_JA;
+  sub bnJ  bnJA by bnJ_JA;
+  sub bnN  bnJA by bnN_JA;
+  sub bnB  bnJA by bnB_JA;
+
+  sub bnNY bnJHA by bnNY_JHA;
+  sub bnJ  bnJHA by bnJ_JHA;
+
+  sub bnC bnNYA by bnC_NYA;
+
+  sub bnK  bnTTA by bnK_TTA;
+  sub bnTT bnTTA by bnTT_TTA;
+  sub bnNN bnTTA by bnNN_TTA;
+  sub bnN  bnTTA by bnN_TTA;
+  sub bnL  bnTTA by bnL_TTA;
+  sub bnSS bnTTA by bnSS_TTA;
+  sub bnP  bnTTA by bnP_TTA;
+  sub bnPH bnTTA by bnPH_TTA;
+  sub bnS  bnTTA by bnS_TTA;
+
+  sub bnNN bnTTHA by bnNN_TTHA;
+  sub bnN  bnTTHA by bnN_TTHA;
+  sub bnSS bnTTHA by bnSS_TTHA;
+
+  sub bnDD bnDDA by bnDD_DDA;
+  sub bnNN bnDDA by bnNN_DDA;
+  sub bnN  bnDDA by bnN_DDA;
+  sub bnB  bnDDA by bnB_DDA;
+  sub bnL  bnDDA by bnL_DDA;
+
+  sub bnNN bnDDHA by bnNN_DDHA;
+  sub bnN  bnDDHA by bnN_DDHA;
+  sub bnB  bnDDHA by bnB_DDHA;
+
+  sub bnNN   bnNNA by bnNN_NNA;
+  sub bnH    bnNNA by bnH_NNA;
+  sub bnSS   bnNNA by bnSS_NNA;
+  sub bnK_SS bnNNA by bnK_SS_NNA;
+
+  sub bnK  bnTA by bnK_TA;
+  sub bnT  bnTA by bnT_TA;
+  sub bnN  bnTA by bnN_TA;
+  sub bnP  bnTA by bnP_TA;
+  sub bnM  bnTA by bnM_TA;
+  sub bnL  bnTA by bnL_TA;
+  sub bnSH bnTA by bnSH_TA;
+  sub bnS  bnTA by bnS_TA;
+
+  sub bnT bnTHA by bnT_THA;
+  sub bnN bnTHA by bnN_THA;
+  sub bnM bnTHA by bnM_THA;
+  sub bnS bnTHA by bnS_THA;
+
+  sub bnG bnDA by bnG_DA;
+  sub bnD bnDA by bnD_DA;
+  sub bnN bnDA by bnN_DA;
+  sub bnB bnDA by bnB_DA;
+  sub bnM bnDA by bnM_DA;
+  sub bnL bnDA by bnL_DA;
+
+  sub bnG bnDHA by bnG_DHA;
+  sub bnN bnDHA by bnN_DHA;
+  sub bnD bnDHA by bnD_DHA;
+  sub bnB bnDHA by bnB_DHA;
+  sub bnL bnDHA by bnL_DHA;
+
+  sub bnK    bnNA by bnK_NA;
+  sub bnG    bnNA by bnG_NA;
+  sub bnGH   bnNA by bnGH_NA;
+  sub bnC    bnNA by bnC_NA;
+  sub bnD    bnNA by bnD_NA;
+  sub bnDH   bnNA by bnDH_NA;
+  sub bnT    bnNA by bnT_NA;
+  sub bnN    bnNA by bnN_NA;
+  sub bnP    bnNA by bnP_NA;
+  sub bnM    bnNA by bnM_NA;
+  sub bnSH   bnNA by bnSH_NA;
+  sub bnS    bnNA by bnS_NA;
+  sub bnH    bnNA by bnH_NA;
+  sub bnK_SS bnNA by bnK_SS_NA;
+
+  sub bnM  bnPA by bnM_PA;
+  sub bnL  bnPA by bnL_PA;
+  sub bnSS bnPA by bnSS_PA;
+  sub bnS  bnPA by bnS_PA;
+  sub bnP  bnPA by bnP_PA;
+
+  sub bnM  bnPHA by bnM_PHA;
+  sub bnS  bnPHA by bnS_PHA;
+  sub bnL  bnPHA by bnL_PHA;
+  sub bnSS bnPHA by bnSS_PHA;
+
+  sub bnD bnBHA by bnD_BHA;
+  sub bnM bnBHA by bnM_BHA;
+  sub bnB bnBHA by bnB_BHA;
+  sub bnL bnBHA by bnL_BHA;
+
+  sub bnK    bnMA by bnK_MA;
+  sub bnG    bnMA by bnG_MA;
+  sub bnNG   bnMA by bnNG_MA;
+  sub bnTT   bnMA by bnTT_MA;
+  sub bnDD   bnMA by bnDD_MA;
+  sub bnNN   bnMA by bnNN_MA;
+  sub bnT    bnMA by bnT_MA;
+  sub bnD    bnMA by bnD_MA;
+  sub bnDH   bnMA by bnDH_MA;
+  sub bnN    bnMA by bnN_MA;
+  sub bnP    bnMA by bnP_MA;
+  sub bnM    bnMA by bnM_MA;
+  sub bnL    bnMA by bnL_MA;
+  sub bnSH   bnMA by bnSH_MA;
+  sub bnS    bnMA by bnS_MA;
+  sub bnSS   bnMA by bnSS_MA;
+  sub bnH    bnMA by bnH_MA;
+  sub bnK_SS bnMA by bnK_SS_MA;
+
+  sub bnK     bnLA by bnK_LA;
+  sub bnG     bnLA by bnG_LA;
+  sub bnT     bnLA by bnT_LA;
+  sub bnP     bnLA by bnP_LA;
+  sub bnPH    bnLA by bnPH_LA;
+  sub bnB     bnLA by bnB_LA;
+  sub bnBH    bnLA by bnBH_LA;
+  sub bnM     bnLA by bnM_LA;
+  sub bnL     bnLA by bnL_LA;
+  sub bnSH    bnLA by bnSH_LA;
+  sub bnS     bnLA by bnS_LA;
+  sub bnH     bnLA by bnH_LA;
+  sub bnS bnK bnLA by bnS_K_LA;
+  sub bnM bnP bnLA by bnM_P_LA;
+  sub bnS bnP bnLA by bnS_P_LA;
+
+  sub bnNG bnK_SSA by bnNG_K_SSA;
+
+  sub bnK bnSA by bnK_SA;
+  sub bnN bnSA by bnN_SA;
+  sub bnP bnSA by bnP_SA;
+
+  # BA C2
+
+  sub bnC bnCH_BA by bnC_CH_BA;
+  sub bnJ  bnJ_BA by bnJ_J_BA;
+  sub bnT  bnT_BA by bnT_T_BA;
+  sub bnN  bnT_BA by bnN_T_BA;
+  sub bnS  bnT_BA by bnS_T_BA;
+  sub bnD  bnD_BA by bnD_D_BA;
+  sub bnN  bnD_BA by bnN_D_BA;
+  sub bnD bnDH_BA by bnD_DH_BA;
+  sub bnN bnDH_BA by bnN_DH_BA;
+
+  # RA C2
+
+  sub bnNG   bnK_RA by bnNG_K_RA;
+  sub bnSS   bnK_RA by bnSS_K_RA;
+  sub bnS    bnK_RA by bnS_K_RA;
+  sub bnNG  bnGH_RA by bnNG_GH_RA;
+  sub bnC   bnCH_RA by bnC_CH_RA;
+  sub bnK   bnTT_RA by bnK_TT_RA;
+  sub bnTT  bnTT_RA by bnTT_TT_RA;
+  sub bnNN  bnTT_RA by bnNN_TT_RA;
+  sub bnN   bnTT_RA by bnN_TT_RA;
+  sub bnL   bnTT_RA by bnL_TT_RA;
+  sub bnSS  bnTT_RA by bnSS_TT_RA;
+  sub bnS   bnTT_RA by bnS_TT_RA;
+  sub bnNN bnTTH_RA by bnNN_TTH_RA;
+  sub bnNN  bnDD_RA by bnNN_DD_RA;
+  sub bnN   bnDD_RA by bnN_DD_RA;
+  sub bnL   bnDD_RA by bnL_DD_RA;
+  sub bnNN bnDDH_RA by bnNN_DDH_RA;
+  sub bnK    bnT_RA by bnK_T_RA;
+  sub bnN    bnT_RA by bnN_T_RA;
+  sub bnP    bnT_RA by bnP_T_RA;
+  sub bnS    bnT_RA by bnS_T_RA;
+  # sub bnT   bnTH_RA by bnT_TH_RA; # Might be T_T_RA actually.
+  sub bnN   bnTH_RA by bnN_TH_RA;
+  sub bnG    bnD_RA by bnG_D_RA;
+  sub bnD    bnD_RA by bnD_D_RA;
+  sub bnN    bnD_RA by bnN_D_RA;
+  sub bnB    bnD_RA by bnB_D_RA;
+  sub bnM    bnD_RA by bnM_D_RA;
+  sub bnL    bnD_RA by bnL_D_RA;
+  sub bnN   bnDH_RA by bnN_DH_RA;
+  sub bnM    bnP_RA by bnM_P_RA;
+  sub bnSS   bnP_RA by bnSS_P_RA;
+  sub bnS    bnP_RA by bnS_P_RA;
+  sub bnM   bnPH_RA by bnM_PH_RA;
+  sub bnL   bnPH_RA by bnL_PH_RA;
+  sub bnS   bnPH_RA by bnS_PH_RA;
+  sub bnD   bnBH_RA by bnD_BH_RA;
+  sub bnB   bnBH_RA by bnB_BH_RA;
+  sub bnM   bnBH_RA by bnM_BH_RA;
+
+} pres_conjunct;
+
+# Cosonant-vowel ligatures
+
+lookup pres_matra {
+
+  # Matra I/II
+
+  sub bnmI bnTTA      by bnTTA_mI;
+  sub bnmI bnK_TTA    by bnK_TTA_mI;
+  sub bnmI bnTT_TTA   by bnTT_TTA_mI;
+  sub bnmI bnNN_TTA   by bnNN_TTA_mI;
+  sub bnmI bnN_TTA    by bnN_TTA_mI;
+  sub bnmI bnL_TTA    by bnL_TTA_mI;
+  sub bnmI bnSS_TTA   by bnSS_TTA_mI;
+  sub bnmI bnP_TTA    by bnP_TTA_mI;
+  sub bnmI bnS_TTA    by bnS_TTA_mI;
+  sub bnmI bnTT_BA    by bnTT_BA_mI;
+  sub bnmI bnTT_MA    by bnTT_MA_mI;
+  sub bnmI bnTT_RA    by bnTT_RA_mI;
+  sub bnmI bnK_TT_RA  by bnK_TT_RA_mI;
+  sub bnmI bnTT_TT_RA by bnTT_TT_RA_mI;
+  sub bnmI bnNN_TT_RA by bnNN_TT_RA_mI;
+  sub bnmI bnN_TT_RA  by bnN_TT_RA_mI;
+  sub bnmI bnL_TT_RA  by bnL_TT_RA_mI;
+  sub bnmI bnSS_TT_RA by bnSS_TT_RA_mI;
+  sub bnmI bnS_TT_RA  by bnS_TT_RA_mI;
+
+  sub bnmI bnTTHA      by bnTTHA_mI;
+  sub bnmI bnNN_TTHA   by bnNN_TTHA_mI;
+  sub bnmI bnN_TTHA    by bnN_TTHA_mI;
+  sub bnmI bnSS_TTHA   by bnSS_TTHA_mI;
+  sub bnmI bnTTH_RA    by bnTTH_RA_mI;
+  sub bnmI bnNN_TTH_RA by bnNN_TTH_RA_mI;
+
+  sub bnTTA      bnmII by bnTTA_mII;
+  sub bnK_TTA    bnmII by bnK_TTA_mII;
+  sub bnTT_TTA   bnmII by bnTT_TTA_mII;
+  sub bnNN_TTA   bnmII by bnNN_TTA_mII;
+  sub bnN_TTA    bnmII by bnN_TTA_mII;
+  sub bnL_TTA    bnmII by bnL_TTA_mII;
+  sub bnSS_TTA   bnmII by bnSS_TTA_mII;
+  sub bnP_TTA    bnmII by bnP_TTA_mII;
+  sub bnS_TTA    bnmII by bnS_TTA_mII;
+  sub bnTT_BA    bnmII by bnTT_BA_mII;
+  sub bnTT_MA    bnmII by bnTT_MA_mII;
+  sub bnTT_RA    bnmII by bnTT_RA_mII;
+  sub bnK_TT_RA  bnmII by bnK_TT_RA_mII;
+  sub bnTT_TT_RA bnmII by bnTT_TT_RA_mII;
+  sub bnNN_TT_RA bnmII by bnNN_TT_RA_mII;
+  sub bnN_TT_RA  bnmII by bnN_TT_RA_mII;
+  sub bnL_TT_RA  bnmII by bnL_TT_RA_mII;
+  sub bnSS_TT_RA bnmII by bnSS_TT_RA_mII;
+  sub bnS_TT_RA  bnmII by bnS_TT_RA_mII;
+
+  sub bnTTHA      bnmII by bnTTHA_mII;
+  sub bnTTH_RA    bnmII by bnTTH_RA_mII;
+  sub bnNN_TTHA   bnmII by bnNN_TTHA_mII;
+  sub bnNN_TTH_RA bnmII by bnNN_TTH_RA_mII;
+  sub bnN_TTHA    bnmII by bnN_TTHA_mII;
+  sub bnSS_TTHA   bnmII by bnSS_TTHA_mII;
+
+  sub bnP_TA     bnmII by bnP_TA_mII;
+  sub bnSH_TA    bnmII by bnSH_TA_mII;
+  sub bnG_DHA    bnmII by bnG_DHA_mII;
+  sub bnP_T_RA   bnmII by bnP_T_RA_mII;
+
+  # Matra U/UU/vR
+
+  # 1. Deep ligatures
+
+  sub bnGA   bnmU by bnGA_mU;
+  sub bnL_GA bnmU by bnL_GA_mU;
+  sub bnN_TA bnmU by bnN_TA_mU;
+  sub bnP_TA bnmU by bnP_TA_mU;
+  sub bnM_TA bnmU by bnM_TA_mU;
+  sub bnS_TA bnmU by bnS_TA_mU;
+  sub bnSHA  bnmU by bnSHA_mU;
+  sub bnHA   bnmU by bnHA_mU;
+
+  sub bnHA bnmvR by bnHA_mvR;
+
+  # 2. Alternative matra U/UU
+
+  sub bnJ_RA   bnmU by bnJ_RA_mU;
+  sub bnD_RA   bnmU by bnD_RA_mU;
+  sub bnM_RA   bnmU by bnM_RA_mU;
+  sub bnN_D_RA bnmU by bnN_D_RA_mU;
+  sub bnBH_RA  bnmU by bnBH_RA_mU;
+  sub bnS_RA   bnmU by bnS_RA_mU;
+  sub bnS_LA   bnmU by bnS_LA_mU;
+
+  sub bnJ_RA   bnmUU by bnJ_RA_mUU;
+  sub bnD_RA   bnmUU by bnD_RA_mUU;
+  sub bnN_D_RA bnmUU by bnN_D_RA_mUU;
+  sub bnBH_RA  bnmUU by bnBH_RA_mUU;
+  sub bnM_RA   bnmUU by bnM_RA_mUU;
+  sub bnS_RA   bnmUU by bnS_RA_mUU;
+  sub bnS_LA   bnmUU by bnS_LA_mUU;
+
+  # AUlengthmark
+
+  sub bnTTA      bnAUlengthmark by bnTTA_AUlengthmark;
+  sub bnK_TTA    bnAUlengthmark by bnK_TTA_AUlengthmark;
+  sub bnTT_TTA   bnAUlengthmark by bnTT_TTA_AUlengthmark;
+  sub bnNN_TTA   bnAUlengthmark by bnNN_TTA_AUlengthmark;
+  sub bnN_TTA    bnAUlengthmark by bnN_TTA_AUlengthmark;
+  sub bnL_TTA    bnAUlengthmark by bnL_TTA_AUlengthmark;
+  sub bnSS_TTA   bnAUlengthmark by bnSS_TTA_AUlengthmark;
+  sub bnP_TTA    bnAUlengthmark by bnP_TTA_AUlengthmark;
+  sub bnS_TTA    bnAUlengthmark by bnS_TTA_AUlengthmark;
+  sub bnTT_BA    bnAUlengthmark by bnTT_BA_AUlengthmark;
+  sub bnTT_MA    bnAUlengthmark by bnTT_MA_AUlengthmark;
+  sub bnTT_RA    bnAUlengthmark by bnTT_RA_AUlengthmark;
+  sub bnK_TT_RA  bnAUlengthmark by bnK_TT_RA_AUlengthmark;
+  sub bnTT_TT_RA bnAUlengthmark by bnTT_TT_RA_AUlengthmark;
+  sub bnNN_TT_RA bnAUlengthmark by bnNN_TT_RA_AUlengthmark;
+  sub bnN_TT_RA  bnAUlengthmark by bnN_TT_RA_AUlengthmark;
+  sub bnL_TT_RA  bnAUlengthmark by bnL_TT_RA_AUlengthmark;
+  sub bnSS_TT_RA bnAUlengthmark by bnSS_TT_RA_AUlengthmark;
+  sub bnS_TT_RA  bnAUlengthmark by bnS_TT_RA_AUlengthmark;
+
+} pres_matra;
+
+# Matra alternatives
+
+lookup pres_matra_alt {
+
+  sub @BASES_for_MATRAII_TALLER bnmII' by bnmII.taller;
+
+  sub @BASES_for_MATRAU_RA [bnmU bnmUU]' by [bnmU.ra bnmUU.ra];
+
+  sub
+    [@BASES_ANGULAR_for_MATRAU @BASES_ANGULAR_SPECIAL_for_MATRAU @BASES_OTHER_for_MATRAU]
+    [bnmU bnmUU bnmvR]'
+    by
+    [bnmU.detached bnmUU.detached bnmvR.detached];
+
+  sub [bnmE bnmE.init bnmAI bnmAI.init] bnTT_TTA' by bnTT_TTA.matrae;
+
+  sub @BASES_for_AULENGTHMARK_TALLER   bnAUlengthmark' by bnAUlengthmark.taller;
+  sub @BASES_for_AULENGTHMARK_NARROWER bnAUlengthmark' by bnAUlengthmark.narrower;
+
+  sub
+    [bnDDxA bnDDHxA]'
+    [bnVirama bnmU bnmUU bnmvR bnmvRR bnmvL bnmvLL]
+    by
+    [bnDDxA.matrau bnDDHxA.matrau];
+
+} pres_matra_alt;
+
+# Reorder B
+
+lookup pres_reorder_B1 {
+  sub
+    bnmU.ra'  lookup swap_mU_ra_Reph
+    bnReph'   lookup swap_mU_ra_Reph;
+  sub
+    bnmUU.ra' lookup swap_mUU_ra_Reph
+    bnReph'   lookup swap_mUU_ra_Reph;
+} pres_reorder_B1;
+
+lookup pres_reorder_B2 {
+  sub
+    bnmU.ra'       lookup swap_mU_ra_Candrabindu
+    bnCandrabindu' lookup swap_mU_ra_Candrabindu;
+  sub
+    bnmUU.ra'      lookup swap_mUU_ra_Candrabindu
+    bnCandrabindu' lookup swap_mUU_ra_Candrabindu;
+} pres_reorder_B2;
+
+# Candrabindu
+
+lookup pres_Candrabindu_smaller_B {
+  sub @BASES_for_CANDRABINDU_SMALLER bnCandrabindu' by bnCandrabindu.smaller;
+} pres_Candrabindu_smaller_B;
+
+lookup pres_Reph_Candrabindu {
+  sub bnReph bnCandrabindu by bnReph_Candrabindu;
+} pres_Reph_Candrabindu;
+
+# Matra I
+
+lookup pres_matrai_step_A {
+  sub bnmI' @BASES_for_MATRAI bnReph             by bnmI_Reph;
+  sub bnmI' @BASES_for_MATRAI bnCandrabindu      by bnmI_Candrabindu;
+  sub bnmI' @BASES_for_MATRAI bnReph_Candrabindu by bnmI_Reph_Candrabindu;
+  sub bnmI' @BASES_for_MATRAI @MARKS_BELOW bnReph             by bnmI_Reph;
+  sub bnmI' @BASES_for_MATRAI @MARKS_BELOW bnCandrabindu      by bnmI_Candrabindu;
+  sub bnmI' @BASES_for_MATRAI @MARKS_BELOW bnReph_Candrabindu by bnmI_Reph_Candrabindu;
+} pres_matrai_step_A;
+
+lookup pres_matrai_step_B {
+  sub
+    [bnmI_Reph bnmI_Candrabindu bnmI_Reph_Candrabindu] @BASES_for_MATRAI
+    [bnReph bnCandrabindu bnReph_Candrabindu]'
+    by
+    bnNull;
+  sub
+    [bnmI_Reph bnmI_Candrabindu bnmI_Reph_Candrabindu] @BASES_for_MATRAI @MARKS_BELOW
+    [bnReph bnCandrabindu bnReph_Candrabindu]'
+    by
+    bnNull;
+} pres_matrai_step_B;

@@ -1,0 +1,658 @@
+.notdef .notdef
+space space uni0020
+
+bnA bnA uni0985
+bnAA bnAA uni0986
+bnI bnI uni0987
+bnII bnII uni0988
+bnU bnU uni0989
+bnUU bnUU uni098A
+bnvR bnvR uni098B
+bnvRR bnvRR uni09E0
+bnvL bnvL uni098C
+bnvLL bnvLL uni09E1
+bnE bnE uni098F
+bnAI bnAI uni0990
+bnO bnO uni0993
+bnAU bnAU uni0994
+
+bnmAA bnmAA uni09BE
+bnmI bnmI uni09BF
+bnmII bnmII uni09C0
+bnmU bnmU uni09C1
+bnmUU bnmUU uni09C2
+bnmvR bnmvR uni09C3
+bnmvRR bnmvRR uni09C4
+bnmvL bnmvL uni09E2
+bnmvLL bnmvLL uni09E3
+bnmE bnmE uni09C7
+bnmAI bnmAI uni09C8
+bnmO bnmO uni09CB
+bnmAU bnmAU uni09CC
+bnAUlengthmark bnAUlengthmark uni09D7
+
+bnKA bnKA uni0995
+bnKHA bnKHA uni0996
+bnGA bnGA uni0997
+bnGHA bnGHA uni0998
+bnNGA bnNGA uni0999
+bnCA bnCA uni099A
+bnCHA bnCHA uni099B
+bnJA bnJA uni099C
+bnJHA bnJHA uni099D
+bnNYA bnNYA uni099E
+bnTTA bnTTA uni099F
+bnTTHA bnTTHA uni09A0
+bnDDA bnDDA uni09A1
+bnDDHA bnDDHA uni09A2
+bnNNA bnNNA uni09A3
+bnTA bnTA uni09A4
+bnTHA bnTHA uni09A5
+bnDA bnDA uni09A6
+bnDHA bnDHA uni09A7
+bnNA bnNA uni09A8
+bnPA bnPA uni09AA
+bnPHA bnPHA uni09AB
+bnBA bnBA uni09AC
+bnBHA bnBHA uni09AD
+bnMA bnMA uni09AE
+bnYA bnYA uni09AF
+bnRA bnRA uni09B0
+bnLA bnLA uni09B2
+bnSHA bnSHA uni09B6
+bnSSA bnSSA uni09B7
+bnSA bnSA uni09B8
+bnHA bnHA uni09B9
+bnK_SSA bnK_SSA
+bnJ_NYA bnJ_NYA
+asRA asRA uni09F0
+asWA asWA uni09F1
+bnDDxA bnDDxA uni09DC
+bnDDHxA bnDDHxA uni09DD
+bnYxA bnYxA uni09DF
+
+bnAnusvara bnAnusvara uni0982
+bnCandrabindu bnCandrabindu uni0981
+bnVisarga bnVisarga uni0983
+bnAvagraha bnAvagraha uni09BD
+bnVirama bnVirama uni09CD
+bnNukta bnNukta uni09BC
+
+bnTAkhanda bnTAkhanda uni09CE
+
+bnZero bnZero uni09E6
+bnOne bnOne uni09E7
+bnTwo bnTwo uni09E8
+bnThree bnThree uni09E9
+bnFour bnFour uni09EA
+bnFive bnFive uni09EB
+bnSix bnSix uni09EC
+bnSeven bnSeven uni09ED
+bnEight bnEight uni09EE
+bnNine bnNine uni09EF
+
+bnAnji bnAnji uni0980
+
+bnTaka bnTaka uni09F2
+bnBangladeshitaka bnBangladeshitaka uni09F3
+
+bnNumeratorone bnNumeratorone uni09F4
+bnNumeratortwo bnNumeratortwo uni09F5
+bnNumeratorthree bnNumeratorthree uni09F6
+bnNumeratorfour bnNumeratorfour uni09F7
+bnNumeratoroneless bnNumeratoroneless uni09F8
+bnDenominatorsixteen bnDenominatorsixteen uni09F9
+
+bnIsshar bnIsshar uni09FA
+
+bnGanda bnGanda uni09FB
+
+danda danda uni0964
+doubledanda doubledanda uni0965
+
+rupee rupee uni20A8
+indianrupee indianrupee uni20B9
+
+uni200C zerowidthnonjoiner uni200C
+uni200D zerowidthjoiner uni200D
+uni25CC dottedcircle uni25CC
+
+ITF ITF
+
+bnNull bnNull
+
+bnReph bnReph
+
+bnRAc2 bnRAc2
+bnYAc2 bnYAc2
+bnBAc2 bnBAc2
+
+bnK bnK
+bnKH bnKH
+bnG bnG
+bnGH bnGH
+bnNG bnNG
+bnC bnC
+bnCH bnCH
+bnJ bnJ
+bnJH bnJH
+bnNY bnNY
+bnTT bnTT
+bnTTH bnTTH
+bnDD bnDD
+bnDDH bnDDH
+bnNN bnNN
+bnT bnT
+bnTH bnTH
+bnD bnD
+bnDH bnDH
+bnN bnN
+bnP bnP
+bnPH bnPH
+bnB bnB
+bnBH bnBH
+bnM bnM
+bnY bnY
+bnR bnR
+bnL bnL
+bnSH bnSH
+bnSS bnSS
+bnS bnS
+bnH bnH
+bnK_SS bnK_SS
+bnJ_NY bnJ_NY
+asR asR
+asW asW
+bnDDx bnDDx
+bnDDHx bnDDHx
+bnYx bnYx
+
+bnK_KA bnK_KA
+bnNG_KA bnNG_KA
+bnL_KA bnL_KA
+bnSS_KA bnSS_KA
+bnS_KA bnS_KA
+
+bnNG_KHA bnNG_KHA
+bnS_KHA bnS_KHA
+
+bnG_GA bnG_GA
+bnNG_GA bnNG_GA
+bnDD_GA bnDD_GA
+bnD_GA bnD_GA
+bnDDx_GA bnDDx_GA
+bnL_GA bnL_GA
+
+bnNG_GHA bnNG_GHA
+bnD_GHA bnD_GHA
+bnL_GHA bnL_GHA
+
+bnC_CA bnC_CA
+bnNY_CA bnNY_CA
+bnSH_CA bnSH_CA
+
+bnC_CHA bnC_CHA
+bnNY_CHA bnNY_CHA
+bnSH_CHA bnSH_CHA
+
+bnNY_JA bnNY_JA
+bnJ_JA bnJ_JA
+bnN_JA bnN_JA
+bnB_JA bnB_JA
+
+bnNY_JHA bnNY_JHA
+bnJ_JHA bnJ_JHA
+
+bnC_NYA bnC_NYA
+
+bnK_TTA bnK_TTA
+bnTT_TTA bnTT_TTA
+bnNN_TTA bnNN_TTA
+bnN_TTA bnN_TTA
+bnL_TTA bnL_TTA
+bnSS_TTA bnSS_TTA
+bnP_TTA bnP_TTA
+bnPH_TTA bnPH_TTA
+bnS_TTA bnS_TTA
+
+bnNN_TTHA bnNN_TTHA
+bnN_TTHA bnN_TTHA
+bnSS_TTHA bnSS_TTHA
+
+bnDD_DDA bnDD_DDA
+bnNN_DDA bnNN_DDA
+bnN_DDA bnN_DDA
+bnB_DDA bnB_DDA
+bnL_DDA bnL_DDA
+
+bnNN_DDHA bnNN_DDHA
+bnN_DDHA bnN_DDHA
+bnB_DDHA bnB_DDHA
+
+bnNN_NNA bnNN_NNA
+bnH_NNA bnH_NNA
+bnSS_NNA bnSS_NNA
+bnK_SS_NNA bnK_SS_NNA
+
+bnK_TA bnK_TA
+bnT_TA bnT_TA
+bnN_TA bnN_TA
+bnP_TA bnP_TA
+bnM_TA bnM_TA
+bnL_TA bnL_TA
+bnSH_TA bnSH_TA
+bnS_TA bnS_TA
+
+bnT_THA bnT_THA
+bnN_THA bnN_THA
+bnM_THA bnM_THA
+bnS_THA bnS_THA
+
+bnG_DA bnG_DA
+bnD_DA bnD_DA
+bnN_DA bnN_DA
+bnB_DA bnB_DA
+bnM_DA bnM_DA
+bnL_DA bnL_DA
+
+bnG_DHA bnG_DHA
+bnN_DHA bnN_DHA
+bnD_DHA bnD_DHA
+bnB_DHA bnB_DHA
+bnL_DHA bnL_DHA
+
+bnK_NA bnK_NA
+bnG_NA bnG_NA
+bnGH_NA bnGH_NA
+bnC_NA bnC_NA
+bnD_NA bnD_NA
+bnDH_NA bnDH_NA
+bnT_NA bnT_NA
+bnN_NA bnN_NA
+bnP_NA bnP_NA
+bnM_NA bnM_NA
+bnSH_NA bnSH_NA
+bnS_NA bnS_NA
+bnH_NA bnH_NA
+bnK_SS_NA bnK_SS_NA
+
+bnM_PA bnM_PA
+bnL_PA bnL_PA
+bnSS_PA bnSS_PA
+bnS_PA bnS_PA
+bnP_PA bnP_PA
+
+bnM_PHA bnM_PHA
+bnS_PHA bnS_PHA
+bnL_PHA bnL_PHA
+bnSS_PHA bnSS_PHA
+
+bnD_BHA bnD_BHA
+bnM_BHA bnM_BHA
+bnB_BHA bnB_BHA
+bnL_BHA bnL_BHA
+
+bnK_MA bnK_MA
+bnG_MA bnG_MA
+bnNG_MA bnNG_MA
+bnTT_MA bnTT_MA
+bnDD_MA bnDD_MA
+bnNN_MA bnNN_MA
+bnT_MA bnT_MA
+bnD_MA bnD_MA
+bnDH_MA bnDH_MA
+bnN_MA bnN_MA
+bnP_MA bnP_MA
+bnM_MA bnM_MA
+bnL_MA bnL_MA
+bnSH_MA bnSH_MA
+bnS_MA bnS_MA
+bnSS_MA bnSS_MA
+bnH_MA bnH_MA
+bnK_SS_MA bnK_SS_MA
+
+bnK_LA bnK_LA
+bnG_LA bnG_LA
+bnT_LA bnT_LA
+bnP_LA bnP_LA
+bnPH_LA bnPH_LA
+bnB_LA bnB_LA
+bnBH_LA bnBH_LA
+bnM_LA bnM_LA
+bnL_LA bnL_LA
+bnSH_LA bnSH_LA
+bnS_LA bnS_LA
+bnH_LA bnH_LA
+bnS_K_LA bnS_K_LA
+bnM_P_LA bnM_P_LA
+bnS_P_LA bnS_P_LA
+
+bnNG_K_SSA bnNG_K_SSA
+
+bnK_SA bnK_SA
+bnN_SA bnN_SA
+bnP_SA bnP_SA
+
+bnN_YA bnN_YA
+bnSH_YA bnSH_YA
+bnSS_YA bnSS_YA
+bnS_YA bnS_YA
+bnH_YA bnH_YA
+
+bnK_RA bnK_RA
+bnKH_RA bnKH_RA
+bnG_RA bnG_RA
+bnGH_RA bnGH_RA
+bnNG_RA bnNG_RA
+bnC_RA bnC_RA
+bnCH_RA bnCH_RA
+bnJ_RA bnJ_RA
+bnJH_RA bnJH_RA
+bnNY_RA bnNY_RA
+bnTT_RA bnTT_RA
+bnTTH_RA bnTTH_RA
+bnDD_RA bnDD_RA
+bnDDH_RA bnDDH_RA
+bnNN_RA bnNN_RA
+bnT_RA bnT_RA
+bnTH_RA bnTH_RA
+bnD_RA bnD_RA
+bnDH_RA bnDH_RA
+bnN_RA bnN_RA
+bnP_RA bnP_RA
+bnPH_RA bnPH_RA
+bnB_RA bnB_RA
+bnBH_RA bnBH_RA
+bnM_RA bnM_RA
+bnSH_RA bnSH_RA
+bnS_RA bnS_RA
+bnSS_RA bnSS_RA
+bnY_RA bnY_RA
+bnL_RA bnL_RA
+bnH_RA bnH_RA
+bnK_SS_RA bnK_SS_RA
+bnJ_NY_RA bnJ_NY_RA
+bnNG_K_RA bnNG_K_RA
+bnSS_K_RA bnSS_K_RA
+bnS_K_RA bnS_K_RA
+bnNG_GH_RA bnNG_GH_RA
+bnC_CH_RA bnC_CH_RA
+bnK_TT_RA bnK_TT_RA
+bnNN_TT_RA bnNN_TT_RA
+bnTT_TT_RA bnTT_TT_RA
+bnN_TT_RA bnN_TT_RA
+bnL_TT_RA bnL_TT_RA
+bnSS_TT_RA bnSS_TT_RA
+bnS_TT_RA bnS_TT_RA
+bnNN_TTH_RA bnNN_TTH_RA
+bnNN_DD_RA bnNN_DD_RA
+bnN_DD_RA bnN_DD_RA
+bnL_DD_RA bnL_DD_RA
+bnNN_DDH_RA bnNN_DDH_RA
+bnK_T_RA bnK_T_RA
+bnN_T_RA bnN_T_RA
+bnP_T_RA bnP_T_RA
+bnS_T_RA bnS_T_RA
+bnT_TH_RA bnT_TH_RA
+bnN_TH_RA bnN_TH_RA
+bnG_D_RA bnG_D_RA
+bnD_D_RA bnD_D_RA
+bnN_D_RA bnN_D_RA
+bnB_D_RA bnB_D_RA
+bnM_D_RA bnM_D_RA
+bnL_D_RA bnL_D_RA
+bnG_DH_RA bnG_DH_RA
+bnN_DH_RA bnN_DH_RA
+bnM_P_RA bnM_P_RA
+bnSS_P_RA bnSS_P_RA
+bnS_P_RA bnS_P_RA
+bnL_PH_RA bnL_PH_RA
+bnS_PH_RA bnS_PH_RA
+bnM_PH_RA bnM_PH_RA
+bnM_B_RA bnM_B_RA
+bnD_BH_RA bnD_BH_RA
+bnB_BH_RA bnB_BH_RA
+bnM_BH_RA bnM_BH_RA
+
+bnK_BA bnK_BA
+bnKH_BA bnKH_BA
+bnG_BA bnG_BA
+bnC_BA bnC_BA
+bnCH_BA bnCH_BA
+bnJ_BA bnJ_BA
+bnTT_BA bnTT_BA
+bnNN_BA bnNN_BA
+bnDD_BA bnDD_BA
+bnT_BA bnT_BA
+bnTH_BA bnTH_BA
+bnD_BA bnD_BA
+bnDH_BA bnDH_BA
+bnN_BA bnN_BA
+bnP_BA bnP_BA
+bnB_BA bnB_BA
+bnM_BA bnM_BA
+bnL_BA bnL_BA
+bnSH_BA bnSH_BA
+bnSS_BA bnSS_BA
+bnS_BA bnS_BA
+bnH_BA bnH_BA
+bnK_SS_BA bnK_SS_BA
+bnC_CH_BA bnC_CH_BA
+bnJ_J_BA bnJ_J_BA
+bnT_T_BA bnT_T_BA
+bnS_T_BA bnS_T_BA
+bnD_D_BA bnD_D_BA
+bnD_DH_BA bnD_DH_BA
+bnN_DH_BA bnN_DH_BA
+bnN_T_BA bnN_T_BA
+bnN_D_BA bnN_D_BA
+
+bnTTA_mI bnTTA_mI
+bnK_TTA_mI bnK_TTA_mI
+bnTT_TTA_mI bnTT_TTA_mI
+bnNN_TTA_mI bnNN_TTA_mI
+bnN_TTA_mI bnN_TTA_mI
+bnL_TTA_mI bnL_TTA_mI
+bnSS_TTA_mI bnSS_TTA_mI
+bnP_TTA_mI bnP_TTA_mI
+bnS_TTA_mI bnS_TTA_mI
+bnTT_BA_mI bnTT_BA_mI
+bnTT_MA_mI bnTT_MA_mI
+bnTT_RA_mI bnTT_RA_mI
+bnK_TT_RA_mI bnK_TT_RA_mI
+bnTT_TT_RA_mI bnTT_TT_RA_mI
+bnNN_TT_RA_mI bnNN_TT_RA_mI
+bnN_TT_RA_mI bnN_TT_RA_mI
+bnL_TT_RA_mI bnL_TT_RA_mI
+bnSS_TT_RA_mI bnSS_TT_RA_mI
+bnS_TT_RA_mI bnS_TT_RA_mI
+bnTTHA_mI bnTTHA_mI
+bnNN_TTHA_mI bnNN_TTHA_mI
+bnN_TTHA_mI bnN_TTHA_mI
+bnSS_TTHA_mI bnSS_TTHA_mI
+bnTTH_RA_mI bnTTH_RA_mI
+bnNN_TTH_RA_mI bnNN_TTH_RA_mI
+
+bnTTA_mII bnTTA_mII
+bnK_TTA_mII bnK_TTA_mII
+bnTT_TTA_mII bnTT_TTA_mII
+bnNN_TTA_mII bnNN_TTA_mII
+bnN_TTA_mII bnN_TTA_mII
+bnL_TTA_mII bnL_TTA_mII
+bnSS_TTA_mII bnSS_TTA_mII
+bnP_TTA_mII bnP_TTA_mII
+bnS_TTA_mII bnS_TTA_mII
+bnTT_BA_mII bnTT_BA_mII
+bnTT_MA_mII bnTT_MA_mII
+bnTT_RA_mII bnTT_RA_mII
+bnK_TT_RA_mII bnK_TT_RA_mII
+bnTT_TT_RA_mII bnTT_TT_RA_mII
+bnNN_TT_RA_mII bnNN_TT_RA_mII
+bnN_TT_RA_mII bnN_TT_RA_mII
+bnL_TT_RA_mII bnL_TT_RA_mII
+bnSS_TT_RA_mII bnSS_TT_RA_mII
+bnS_TT_RA_mII bnS_TT_RA_mII
+bnTTHA_mII bnTTHA_mII
+bnTTH_RA_mII bnTTH_RA_mII
+bnNN_TTHA_mII bnNN_TTHA_mII
+bnN_TTHA_mII bnN_TTHA_mII
+bnNN_TTH_RA_mII bnNN_TTH_RA_mII
+bnSS_TTHA_mII bnSS_TTHA_mII
+bnP_TA_mII bnP_TA_mII
+bnSH_TA_mII bnSH_TA_mII
+bnG_DHA_mII bnG_DHA_mII
+bnP_T_RA_mII bnP_T_RA_mII
+bnG_DH_RA_mII bnG_DH_RA_mII
+
+bnTTA_mII_Reph bnTTA_mII_Reph
+bnK_TTA_mII_Reph bnK_TTA_mII_Reph
+bnTT_TTA_mII_Reph bnTT_TTA_mII_Reph
+bnNN_TTA_mII_Reph bnNN_TTA_mII_Reph
+bnN_TTA_mII_Reph bnN_TTA_mII_Reph
+bnL_TTA_mII_Reph bnL_TTA_mII_Reph
+bnSS_TTA_mII_Reph bnSS_TTA_mII_Reph
+bnP_TTA_mII_Reph bnP_TTA_mII_Reph
+bnS_TTA_mII_Reph bnS_TTA_mII_Reph
+bnTT_BA_mII_Reph bnTT_BA_mII_Reph
+bnTT_MA_mII_Reph bnTT_MA_mII_Reph
+bnTTHA_mII_Reph bnTTHA_mII_Reph
+bnNN_TTHA_mII_Reph bnNN_TTHA_mII_Reph
+bnN_TTHA_mII_Reph bnN_TTHA_mII_Reph
+bnSS_TTHA_mII_Reph bnSS_TTHA_mII_Reph
+bnSH_TA_mII_Reph bnSH_TA_mII_Reph
+bnG_DHA_mII_Reph bnG_DHA_mII_Reph
+bnG_MA_mII_Reph bnG_MA_mII_Reph
+
+bnGA_mU bnGA_mU
+asRA_mU asRA_mU
+bnRA_mU bnRA_mU
+asWA_mU asWA_mU
+bnSHA_mU bnSHA_mU
+bnHA_mU bnHA_mU
+bnKH_RA_mU bnKH_RA_mU
+bnG_RA_mU bnG_RA_mU
+bnG_LA_mU bnG_LA_mU
+bnJ_RA_mU bnJ_RA_mU
+bnT_RA_mU bnT_RA_mU
+bnTH_RA_mU bnTH_RA_mU
+bnD_RA_mU bnD_RA_mU
+bnD_GA_mU bnD_GA_mU
+bnDH_RA_mU bnDH_RA_mU
+bnM_RA_mU bnM_RA_mU
+bnN_TA_mU bnN_TA_mU
+bnP_TA_mU bnP_TA_mU
+bnN_D_RA_mU bnN_D_RA_mU
+bnP_RA_mU bnP_RA_mU
+bnP_LA_mU bnP_LA_mU
+bnB_LA_mU bnB_LA_mU
+bnB_RA_mU bnB_RA_mU
+bnBH_RA_mU bnBH_RA_mU
+bnL_GA_mU bnL_GA_mU
+bnM_TA_mU bnM_TA_mU
+bnM_P_RA_mU bnM_P_RA_mU
+bnSH_RA_mU bnSH_RA_mU
+bnSH_LA_mU bnSH_LA_mU
+bnS_RA_mU bnS_RA_mU
+bnS_TA_mU bnS_TA_mU
+bnS_LA_mU bnS_LA_mU
+bnS_P_RA_mU bnS_P_RA_mU
+bnS_P_LA_mU bnS_P_LA_mU
+bnSS_P_RA_mU bnSS_P_RA_mU
+
+asRA_mUU asRA_mUU
+bnRA_mUU bnRA_mUU
+asWA_mUU asWA_mUU
+bnKH_RA_mUU bnKH_RA_mUU
+bnG_RA_mUU bnG_RA_mUU
+bnG_LA_mUU bnG_LA_mUU
+bnJ_RA_mUU bnJ_RA_mUU
+bnT_RA_mUU bnT_RA_mUU
+bnTH_RA_mUU bnTH_RA_mUU
+bnD_RA_mUU bnD_RA_mUU
+bnDH_RA_mUU bnDH_RA_mUU
+bnM_RA_mUU bnM_RA_mUU
+bnN_D_RA_mUU bnN_D_RA_mUU
+bnP_RA_mUU bnP_RA_mUU
+bnP_LA_mUU bnP_LA_mUU
+bnB_RA_mUU bnB_RA_mUU
+bnB_LA_mUU bnB_LA_mUU
+bnBH_RA_mUU bnBH_RA_mUU
+bnM_P_RA_mUU bnM_P_RA_mUU
+bnSH_RA_mUU bnSH_RA_mUU
+bnSH_LA_mUU bnSH_LA_mUU
+bnS_LA_mUU bnS_LA_mUU
+bnS_RA_mUU bnS_RA_mUU
+bnS_P_RA_mUU bnS_P_RA_mUU
+bnS_P_LA_mUU bnS_P_LA_mUU
+bnSS_P_RA_mUU bnSS_P_RA_mUU
+
+bnHA_mvR bnHA_mvR
+
+bnTTA_AUlengthmark bnTTA_AUlengthmark
+bnK_TTA_AUlengthmark bnK_TTA_AUlengthmark
+bnTT_TTA_AUlengthmark bnTT_TTA_AUlengthmark
+bnNN_TTA_AUlengthmark bnNN_TTA_AUlengthmark
+bnN_TTA_AUlengthmark bnN_TTA_AUlengthmark
+bnL_TTA_AUlengthmark bnL_TTA_AUlengthmark
+bnSS_TTA_AUlengthmark bnSS_TTA_AUlengthmark
+bnP_TTA_AUlengthmark bnP_TTA_AUlengthmark
+bnS_TTA_AUlengthmark bnS_TTA_AUlengthmark
+bnTT_BA_AUlengthmark bnTT_BA_AUlengthmark
+bnTT_MA_AUlengthmark bnTT_MA_AUlengthmark
+bnTT_RA_AUlengthmark bnTT_RA_AUlengthmark
+bnK_TT_RA_AUlengthmark bnK_TT_RA_AUlengthmark
+bnTT_TT_RA_AUlengthmark bnTT_TT_RA_AUlengthmark
+bnNN_TT_RA_AUlengthmark bnNN_TT_RA_AUlengthmark
+bnN_TT_RA_AUlengthmark bnN_TT_RA_AUlengthmark
+bnL_TT_RA_AUlengthmark bnL_TT_RA_AUlengthmark
+bnSS_TT_RA_AUlengthmark bnSS_TT_RA_AUlengthmark
+bnS_TT_RA_AUlengthmark bnS_TT_RA_AUlengthmark
+
+bnReph_Candrabindu bnReph_Candrabindu
+
+bnmI_Reph bnmI_Reph
+bnmI_Candrabindu bnmI_Candrabindu
+bnmI_Reph_Candrabindu bnmI_Reph_Candrabindu
+
+bnmII_Reph bnmII_Reph
+
+bnmII.taller bnmII.taller
+bnmU.detached bnmU.detached
+bnmU.ra bnmU.ra
+bnmUU.detached bnmUU.detached
+bnmUU.ra bnmUU.ra
+bnmvR.detached bnmvR.detached
+bnmE.init bnmE.init
+bnmAI.init bnmAI.init
+bnAUlengthmark.taller bnAUlengthmark.taller
+bnAUlengthmark.narrower bnAUlengthmark.narrower
+
+bnDDxA.matrau bnDDxA.matrau
+bnDDHxA.matrau bnDDHxA.matrau
+
+bnCandrabindu.smaller bnCandrabindu.smaller
+
+bnReph.matraii bnReph.matraii
+bnReph.short bnReph.short
+bnReph.a bnReph.a
+bnReph.a.short bnReph.a.short
+
+bnT.alt bnT.alt
+
+bnTTH_RA.matrae bnTTH_RA.matrae
+bnK_TT_RA.matrae bnK_TT_RA.matrae
+bnNN_TT_RA.matrae bnNN_TT_RA.matrae
+bnTT_TT_RA.matrae bnTT_TT_RA.matrae
+bnSS_TT_RA.matrae bnSS_TT_RA.matrae
+bnS_TT_RA.matrae bnS_TT_RA.matrae
+bnT_RA.matrae bnT_RA.matrae
+bnGH_RA.matrae bnGH_RA.matrae
+bnJH_RA.matrae bnJH_RA.matrae
+bnTT_RA.matrae bnTT_RA.matrae
+bnDDH_RA.matrae bnDDH_RA.matrae
+bnPH_RA.matrae bnPH_RA.matrae
+bnB_RA.matrae bnB_RA.matrae
+bnBH_RA.matrae bnBH_RA.matrae
+bnH_RA.matrae bnH_RA.matrae
+bnY_RA.matrae bnY_RA.matrae
+bnTT_TTA.matrae bnTT_TTA.matrae

@@ -1,0 +1,249 @@
+languagesystem DFLT dflt;
+languagesystem bng2 dflt;
+languagesystem beng dflt;
+
+include (../../features/GENERATED_classes.fea);
+include (../../features/tables.fea);
+include (../../features/lookups.fea);
+
+
+# -------------------
+# BASIC SHAPING FORMS
+# -------------------
+
+# Nukta Forms
+# -----------
+
+feature nukt {
+  lookup nukt;
+} nukt;
+
+
+# Akhand Ligatures
+# ----------------
+
+feature akhn {
+  lookup akhn;
+  lookup akhn_takhanda;
+} akhn;
+
+
+# Reph Forms
+# ----------
+
+feature rphf {
+  lookup rphf;
+} rphf;
+
+
+# Below-base Forms
+# ----------------
+
+feature blwf {
+
+  script DFLT;
+    lookup blwf_new;
+
+  script bng2;
+    lookup blwf_new;
+
+  script beng;
+    lookup blwf_old;
+
+} blwf;
+
+
+# Half Forms
+# ----------
+
+feature half {
+  lookup half;
+} half;
+
+
+# Post-base Forms
+# ---------------
+
+feature pstf {
+
+  script DFLT;
+    lookup pstf_new;
+
+  script bng2;
+    lookup pstf_new;
+
+  script beng;
+    lookup pstf_old;
+
+} pstf;
+
+
+# Vattu Variants
+# --------------
+
+# feature vatu {
+# } vatu;
+
+
+# Conjunct Forms
+# --------------
+
+# feature cjct {
+# } cjct;
+
+
+# ----------------------------
+# MANDATORY PRESENTATION FORMS
+# ----------------------------
+
+# Initial Forms
+# -------------
+
+feature init {
+  lookup init;
+} init;
+
+
+# Pre-base Substitution
+# ---------------------
+
+# C Reph'> mII Candrabindu -> C mI Reph.matraii' Candrabindu
+
+# C Reph YAc2 mAA <<Candrabindu' -> C Reph Candrabindu' YAc2 mAA
+
+# C Reph <AUlenghthmark' Candrabindu -> C AUlenghthmark' Reph Candrabindu
+# Core Text: C Reph Candrabindu <<AUlenghthmark' -> C AUlenghthmark' Reph Candrabindu
+
+#! mU -> mU.ra
+
+# C mU.ra'>> Reph Candrabindu -> C Reph Candrabindu mU.ra'
+
+#! Reph Candrabindu -> Reph_Candrabindu
+
+feature pres {
+
+  # Reorder A
+
+  lookup pres_reorder_A1;
+  lookup pres_reorder_A2;
+
+  # BA C2
+
+  lookup pres_ba_c2;
+
+  # RA C2
+
+  lookup pres_ra_c2;
+
+  # Small Candrabindu
+
+  lookup pres_Candrabindu_smaller_A;
+
+  # Conjuncts
+
+  lookup pres_conjunct;
+
+  # Cosonant-vowel ligatures
+
+  lookup pres_matra;
+
+  # Matra alternatives
+
+  lookup pres_matra_alt;
+
+  # Reorder B
+
+  lookup pres_reorder_B1;
+  lookup pres_reorder_B2;
+
+  # Candrabindu
+
+  lookup pres_Candrabindu_smaller_B;
+  lookup pres_Reph_Candrabindu;
+
+  # Matra I
+
+  lookup pres_matrai_step_A;
+  lookup pres_matrai_step_B;
+
+} pres;
+
+
+# Above-base Substitution
+# -----------------------
+
+# feature abvs {
+# } abvs;
+
+
+# Below-base Substitution
+# -----------------------
+
+# feature blws {
+# } blws;
+
+
+# Post-base Substitution
+# ----------------------
+
+# feature psts {
+# } psts;
+
+
+# Halant Forms
+# ------------
+
+# feature haln {
+# } haln;
+
+
+# Required Contextual Alternates
+# ------------------------------
+# Newly proposed; not in the specification.
+
+# feature rclt {
+# } rclt;
+
+
+# --------------------------------
+# DISCRETIONARY PRESENTATION FORMS
+# --------------------------------
+
+# Contextual Alternates
+# ---------------------
+
+# feature calt {
+# } calt;
+
+
+# -----------
+# POSITIONING
+# -----------
+
+# Kerning
+# -------
+
+feature kern {
+  include (kern.fea);
+} kern;
+
+
+# Distances
+# ---------
+
+# feature dist {
+# } dist;
+
+
+# Above- and Below-base Mark Positioning
+# --------------------------------------
+
+include (markclasses.fea);
+
+feature abvm {
+  include (abvm.fea);
+} abvm;
+
+feature blwm {
+  include (blwm.fea);
+} blwm;
