@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 import itfoundrykit as kit
-kit.confirm_version('2.1.0')
+kit.confirm_version('2.1.1')
 
 # - - -
 
