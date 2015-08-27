@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 import hindkit as kit
-kit.confirm_version('0.1.2')
+kit.confirm_version('0.1.3')
 
 # - - -
 
@@ -26,7 +26,7 @@ family.set_styles()
 
 builder = kit.Builder(family)
 
-builder.fontrevision = '0.701'
+builder.fontrevision = '0.702'
 
 builder.set_options([
 
