@@ -637,8 +637,6 @@ bnReph.short bnReph.short
 bnReph.a bnReph.a
 bnReph.a.short bnReph.a.short
 
-# ---
-
 # Adobe Latin 3
 
 # space space uni0020 # SPACE
@@ -754,14 +752,14 @@ registered registered uni00AE # REGISTERED SIGN
 macron macron uni00AF # MACRON
 degree degree uni00B0 # DEGREE SIGN
 plusminus plusminus uni00B1 # PLUS-MINUS SIGN
-twosuperior twosuperior uni00B2 # SUPERSCRIPT TWO
-threesuperior threesuperior uni00B3 # SUPERSCRIPT THREE
+twosuperior two.superior uni00B2 # SUPERSCRIPT TWO
+threesuperior three.superior uni00B3 # SUPERSCRIPT THREE
 acute acute uni00B4 # ACUTE ACCENT
 uni00B5 mu.math uni00B5 # MICRO SIGN
 paragraph paragraph uni00B6 # PILCROW SIGN
 periodcentered periodcentered uni00B7 # MIDDLE DOT
 cedilla cedilla uni00B8 # CEDILLA
-onesuperior onesuperior uni00B9 # SUPERSCRIPT ONE
+onesuperior one.superior uni00B9 # SUPERSCRIPT ONE
 ordmasculine ordmasculine uni00BA # MASCULINE ORDINAL INDICATOR
 guillemotright guillemotright uni00BB # RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
 onequarter onequarter uni00BC # VULGAR FRACTION ONE QUARTER
