@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 import hindkit as kit
-kit.confirm_version('0.1.3')
+kit.confirm_version('0.3.0')
 
 # - - -
 
@@ -26,7 +26,7 @@ family.set_styles()
 
 builder = kit.Builder(family)
 
-builder.fontrevision = '0.702'
+builder.fontrevision = '1.000'
 
 builder.set_options([
 
@@ -44,6 +44,8 @@ builder.set_options([
     'is_width_weight_slope_only',
 
 ])
+
+builder.import_glyphs()
 
 builder.generate_designspace()
 builder.generate_fmndb()

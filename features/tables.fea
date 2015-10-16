@@ -2,9 +2,9 @@
 # -----------------
 
 table hhea {
-  Ascender 750;
-  Descender -250;
-  LineGap 200;
+  Ascender 1200;
+  Descender -800;
+  LineGap 0;
 } hhea;
 
 
@@ -15,9 +15,9 @@ table OS/2 {
   FSType 0;
   Panose 2 0 0 0 0 0 0 0 0 0;
   UnicodeRange
-    # 0   # Basic Latin
-    # 1   # Latin-1 Supplement
-    # 2   # Latin Extended-A
+    0   # Basic Latin
+    1   # Latin-1 Supplement
+    2   # Latin Extended-A
     # 15  # Devanagari 0900-097F
     16  # Bengali 0980-09FF
     # 17  # Gurmukhi 0A00-0A7F
@@ -27,13 +27,14 @@ table OS/2 {
     # 21  # Telugu 0C00-0C7F
     # 22  # Kannada 0C80-0CFF
     # 23  # Malayalam 0D00-0D7F
+    # 73  # Sinhala 0D80-0DFF
     ;
   # CodePageRange;
-  TypoAscender 750;
-  TypoDescender -250;
-  TypoLineGap 200;
-  winAscent 850;
-  winDescent 350;
+  TypoAscender 1200;
+  TypoDescender -800;
+  TypoLineGap 0;
+  winAscent 1200;
+  winDescent 800;
   include (weightclass.fea); # WeightClass 400;
   WidthClass 5;
   Vendor "ITFO";
@@ -63,7 +64,7 @@ table name {
   # nameid 10 "";
 
 # URL vendor
-  nameid 11 "http://www.indiantypefoundry.com/googlefonts";
+  nameid 11 "https://github.com/itfoundry/hind-siliguri";
 
 # URL designer
   # nameid 12 "";
